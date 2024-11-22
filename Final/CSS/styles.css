@@ -1,0 +1,75 @@
+body{
+    background-color: rgb(118, 224, 204);
+}
+header{
+    padding: 1em;
+}
+#calcResults{
+    display: flex;
+    justify-content: center;
+}
+#calcResults > *{
+    margin: 1em;
+    padding: 4em;
+    background-color: azure;
+}
+p{
+    font-size: 1.1em;
+}
+label{
+    font-size: 1.2em;
+}
+input{
+    font-size: 1em;
+}
+button{
+    margin-top: 0.5em;
+    font-size: 0.9em;
+}
+h1{
+    font-size: 2.2em;
+}
+/*phone media query*/
+@media(max-width:768px){
+    #calcResults{
+        flex-direction: column;
+        align-items: center;
+    }
+    #calcResults> *{
+        padding: 1em;
+    }
+    p{
+        font-size: 1.2em;
+    }
+    label{
+        font-size: 1.1em;
+    }
+    input{
+        font-size: 1.2em;
+    }
+    button{
+        font-size: 1.15em;
+    }
+    h1{
+        font-size: 2em;
+    }
+
+}
+@media(min-width:768px) and (max-width:1280px){
+    #calcResults> *{
+        padding: 2em;
+        margin: 0.5em;
+    }
+    p{
+        font-size: 1.15em;
+    }
+    input{
+        font-size: 1.15em;
+    }
+    button{
+        font-size: 1.15em;
+    }
+    h1{
+        font-size: 2.1em;
+    }
+}
